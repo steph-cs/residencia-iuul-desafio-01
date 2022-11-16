@@ -2,18 +2,21 @@
   font-family: "Montagna";
   src: url(fonts/MontagnaLTD/Montagna\ LTD.otf);
 }
+
 @font-face {
   font-family: "Playfair";
   src: url(fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: "OpenSans";
   src: url(fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 :root {
-  --primary-color : #0A0E0F;
-  --second-color: #21212B;
+  --primary-color: #0A0E0F;
+  --background-color: #1b1b1b;
+  --second-color: #323239;
   --third-color: #BDBDBD;
 }
 
@@ -25,31 +28,60 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  border: none;
+  outline: none;
   font-family: "OpenSans";
 }
 
-body{
-  background-color: rgb(28, 28, 28);
+input, textarea{
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-size: 14px;
+  resize: none;
+  background-color: var(--third-color);
+}
+
+.w-100{
+  width: 100%;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.f-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.f-row{
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 /*nav style*/
-nav {
-  display: flex;
+.nav {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  height: 40px;
-  width: 100%;
-  padding: 0 30px; 
+  height: 50px;
+  padding: 0 30px;
 }
 
-#title{
+#title {
   font-family: "Montagna";
+  font-size: large;
   width: 50%;
 }
-nav ul{
+
+ul {
   width: 50%;
-  display: flex;
   font-weight: 500;
   justify-content: space-around;
 }
@@ -59,36 +91,32 @@ nav ul{
   margin-top: 50px;
   margin: 50px;
   height: 80%;
-  display: flex;
   align-items: center;
 
 }
-.img-perfil::before{
+
+.img-perfil::before {
   content: '';
   z-index: -5;
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
-  height: 80%;
+  height: 500px;
   background-color: var(--primary-color);
   clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
 }
 
-.img-perfil{
+.img-perfil {
   width: 70%;
-  display: flex;
   justify-content: center;
 }
 
-#img-perfil{
- 
+#img-perfil {
   border-radius: 50%;
 }
 
-.texto-perfil{
-  display: flex;
-  flex-direction: column;
+.texto-perfil {
   align-items: flex-start;
   justify-content: space-between;
   font-weight: bolder;
@@ -96,33 +124,33 @@ nav ul{
 }
 
 /*hey perfil*/
-.rotate{
+.rotate {
   width: fit-content;
   position: absolute;
   top: 10%;
   right: 40%;
   rotate: -20deg;
-  
+
 }
 
-.rotate p{
+.rotate p {
   display: inline;
 }
 
-.rotate p:last-child{
+.rotate p:last-child {
   animation: hey 800ms alternate infinite;
 }
 
 @keyframes hey {
-  to{
+  to {
     opacity: 0;
   }
 }
 
 
-/*btn saiba mais*/
+/*btn*/
 
-.btn{
+.btn {
   margin-top: 50px;
   padding: 10px 15px;
   font-size: large;
@@ -131,51 +159,107 @@ nav ul{
 }
 
 
-/*cards portifolio*/
+/*cards portfolio*/
 
-.portifolio{
-  width: 100%;
-  padding: 20px 50px;
-  
+#portfolio {
+  padding: 25px 50px;
+
 }
 
-.portifolio h2{
+h2 {
   font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.portifolio h2::after{
-  content: "";
-  position: absolute;
-  top: 540px;
-  width: 100px;
-  border: white solid 2px;
-}
 
-.cards-portifolio{
-  width: 100%;
-  display: flex;
+.cards-portfolio {
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
 }
-.card{
+
+.card {
   background-color: var(--second-color);
   width: 400px;
   height: 500px;
   margin: 0 20px 30px 0;
 }
 
-.img-card{
+.img-card {
   height: 200px;
   overflow: hidden;
 }
 
-.card-content{
+.card-content {
   padding: 15px;
 }
 
-.card-title{
+.card-title {
   font-size: large;
   font-weight: bold;
+}
+
+/*Contato*/
+
+.contato{
+  background-color: rgba(0, 0, 0, 0.587);
+  width: 90%;
+  margin-bottom: 30px;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contatos{
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ctt{
+  background-color: var(--second-color);
+  width: 40%;
+  padding: 15px;
+  
+}
+
+.ctt .social-media{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.form-contato form{
+  justify-content: space-evenly;
+}
+
+.ct-contato{
+  margin-top: 30px;
+}
+
+.form-contato{
+    background-color: var(--second-color);
+    width: 90%;
+    padding: 20px 30px;
+}
+
+.form-inputs{
+  width: 40%;
+  justify-content: space-around;
+}
+/*Footer*/
+
+footer{
+  padding-top: 20px;
+  background-color: #000000;
+  height: 150px;
+  justify-content: center;
+}
+
+.social-media{
+  border-top: white solid 2px;
+  padding: 25px;
+}
+
+.social-media a{
+  margin-right: 20px;
+  font-size: 20px;
 }

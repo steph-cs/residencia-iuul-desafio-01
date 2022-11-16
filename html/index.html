@@ -12,55 +12,58 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="nav w-100 f-row">
       <div id="title">STEPHANIE CAMPELO</div>
-      <ul>
+      <ul class="f-row">
         <li>Home</li>
         <li>Perfil</li>
-        <li>Portifolio</li>
+        <li>Portfólio</li>
         <li>Contato</li>
       </ul>
     </nav>
   </header>
 
-  <div class="perfil">
-    <div class="img-perfil">
-      <img id="img-perfil"  src="../img/foto_perfil.png" alt="" height="350px">
+  <div class="perfil f-row">
+    <div class="img-perfil f-row">
+      <img id="img-perfil" src="../img/foto_perfil.png" alt="" height="350px">
     </div>
-    
-    <div class="texto-perfil">
+
+    <div class="texto-perfil f-col">
       <div class="rotate">
-        <p>Hey!</p><p>_</p>
+        <p>Hey!</p>
+        <p>_</p>
       </div>
       <div>
         <p>
-        EU SOU A STEPHANIE CAMPELO.
-      </p>
-      <p>
-        DESENVOLVEDORA
-      </p>
-      <p>
-        &lt;FRONT END!&gt;.
-      </p>
+          EU SOU A STEPHANIE CAMPELO.
+        </p>
+        <p>
+          DESENVOLVEDORA
+        </p>
+        <p>
+          &lt;FRONT END!&gt;.
+        </p>
       </div>
       <button class="btn">Saiba mais...</button>
     </div>
   </div>
 
-  <div class="portifolio">
-  
-    <h2>PORTIFOLIO</h2>
-    
-    <div class="cards-portifolio">
+  <div id="portfolio"  class="w-100">
+
+    <h2>PORTFÓLIO _______</h2>
+
+    <div class="cards-portfolio w-100 f-row">
       <div class="card">
         <div class="img-card">
-          <img src="../img/clone_netflix.png" alt="" width="100%" >
+          <img src="../img/clone_netflix.png" alt="" width="100%">
         </div>
         <div class="card-content">
           <div class="card-title">Clone Netflix</div>
           <div class="card-text">
             <p>
-              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado conforme me aprofundava nos estudos.
+              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e
+              estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado
+              conforme me aprofundava nos estudos.
             </p>
           </div>
         </div>
@@ -68,13 +71,15 @@
 
       <div class="card">
         <div class="img-card">
-          <img src="../img/lokacar.png" alt="" width="100%" >
+          <img src="../img/lokacar.png" alt="" width="100%">
         </div>
         <div class="card-content">
           <div class="card-title">Clone Netflix</div>
           <div class="card-text">
             <p>
-              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado conforme me aprofundava nos estudos.
+              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e
+              estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado
+              conforme me aprofundava nos estudos.
             </p>
           </div>
         </div>
@@ -83,22 +88,129 @@
 
       <div class="card">
         <div class="img-card">
-          <img src="../img/tela_login.png" alt="" width="100%" >
+          <img src="../img/tela_login.png" alt="" width="100%">
         </div>
         <div class="card-content">
           <div class="card-title">Clone Netflix</div>
           <div class="card-text">
             <p>
-              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado conforme me aprofundava nos estudos.
+              Um dos primeiros projetos desenvolvidos. O clone foi feito inicialmente utilizando os conceitos e
+              estruturas básicas de HTML e CSS estudadas durante as aulas oferecidas pelo bootcamp e aperfeiçoado
+              conforme me aprofundava nos estudos.
             </p>
           </div>
         </div>
       </div>
     </div>
-    
-
   </div>
-  
+
+  <div class="f-row center" id="contato">
+    <div class="contato f-col">
+      <h2>CONTATO _______</h2>
+      <div class="contatos w-100 f-row">
+        <div class="ctt">
+          <div>
+            <h3><i class="fa-solid fa-at"></i>  Email</h3>
+          </div>
+          
+          <div class="social-media center f-row">
+            <a href="mailto:stecampelo@gmail.com" target="_blank">
+              stecampelo@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="ctt">
+          <div>
+            <h3><i class="fa-solid fa-user"></i>  Redes Sociais</h3>
+          </div>
+          
+          <ul class="social-media w-100 center f-row">
+            <li>
+              <a target="_blank" href="https://github.com/steph-cs">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/stephanie-campelo/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/ste_campelo/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/steph_campelo">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ct-contato center w-100 f-col">
+        <div class="form-contato center f-col">
+          <div class="w-100">
+            <form id="form-contato" action="" method="post" class="f-row">
+              <div class="f-col form-inputs">
+                <label for="nome">Nome*:</label>
+                <input type="text" placeholder="Nome completo" id="nome">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" placeholder="Telefone" id="telefone">
+
+                <label for="email">Email*:</label>
+                <input type="email" placeholder="Email" id="email">
+              </div>
+              <div class="f-col form-inputs">
+                <label for="msg">Mensagem*:</label>
+                <textarea required form="contato" maxlength="240" name="msg" id="msg" cols="50" rows="10"></textarea>
+              </div>
+            </form>
+          </div>
+          <div>
+            <button class="btn" type="submit" form="form-contato">Enviar</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <footer class="f-col">
+    <div class="nav f-row">
+      <div id="title">STEPHANIE CAMPELO</div>
+      <ul class="f-row">
+        <li><a href="">Home</a></li>
+        <li><a href="">Perfil</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+    <ul class="social-media w-100 center f-row">
+      <li>
+        <a target="_blank" href="https://github.com/steph-cs">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/stephanie-campelo/">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/ste_campelo/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://twitter.com/steph_campelo">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
