@@ -4,13 +4,8 @@
 }
 
 @font-face {
-  font-family: "Playfair";
-  src: url(fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url(fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: "HelveticaNeue";
+  src: url(fonts/HelveticaNeue/helveticaneue.ttf);
 }
 
 :root {
@@ -30,33 +25,61 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "OpenSans";
+  font-family: "HelveticaNeue";
 }
 
-input, textarea{
-  padding: 10px 15px;
+input,
+textarea {
+  padding: 0 15px;
   letter-spacing: 1px;
-  color: var(--primary-color);
+  color: white;
   font-size: 14px;
   resize: none;
-  background-color: var(--third-color);
+  background-color: transparent;
 }
 
-.w-100{
+input {
+  height: 30px;
+}
+
+input:hover,
+textarea:hover {
+  border-width: 2px;
+}
+
+input:focus,
+textarea:focus {
+  border-width: 2px;
+}
+
+textarea {
+  border: white 1px solid;
+}
+
+input {
+  margin-bottom: 10px;
+  border-bottom: white 1px solid;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.w-100 {
   width: 100%;
 }
 
-.center{
+.center {
   justify-content: center;
   align-items: center;
 }
 
-.f-col{
+.f-col {
   display: flex;
   flex-direction: column;
 }
 
-.f-row{
+.f-row {
   display: flex;
   flex-direction: row;
 }
@@ -66,12 +89,19 @@ body {
 }
 
 /*nav style*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 .nav {
   justify-content: space-between;
   align-items: center;
   background-color: black;
   height: 50px;
   padding: 0 30px;
+  border-bottom: white 1px solid;
 }
 
 #title {
@@ -82,15 +112,31 @@ body {
 
 ul {
   width: 50%;
-  font-weight: 500;
+  height: 100%;
+  font-weight: 300;
   justify-content: space-around;
+}
+
+nav li {
+  width: 100%;
+  height: 100%;
+}
+
+li:hover a {
+  border-bottom: white 2px solid;
+}
+
+ul .active,
+ul .active a {
+  box-sizing: content-box;
+  background-color: white;
+  color: black;
+  border-bottom: #000000 2px solid;
 }
 
 /*banner perfil*/
 .perfil {
-  margin-top: 50px;
-  margin: 50px;
-  height: 80%;
+  padding: 50px;
   align-items: center;
 
 }
@@ -103,7 +149,7 @@ ul {
   left: 0;
   width: 50%;
   height: 500px;
-  background-color: var(--primary-color);
+  background-color: black;
   clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
 }
 
@@ -116,15 +162,25 @@ ul {
   border-radius: 50%;
 }
 
-.texto-perfil {
+.content-perfil {
+  height: 100%;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: bolder;
   font-size: xx-large;
 }
 
+.texto-perfil {
+  height: 60%;
+  justify-content: flex-end;
+}
+
+.btn-perfil {
+  height: 40%;
+}
+
 /*hey perfil*/
-.rotate {
+.hey-perfil {
   width: fit-content;
   position: absolute;
   top: 10%;
@@ -133,11 +189,11 @@ ul {
 
 }
 
-.rotate p {
+.hey-perfil p {
   display: inline;
 }
 
-.rotate p:last-child {
+.hey-perfil p:last-child {
   animation: hey 800ms alternate infinite;
 }
 
@@ -152,12 +208,28 @@ ul {
 
 .btn {
   margin-top: 50px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   font-size: large;
   font-weight: bolder;
   color: black;
 }
 
+.btn-second {
+  background-color: transparent;
+  color: white;
+  border: 2px white solid;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #000000;
+  border: white 2px solid;
+}
+
+.btn-second:hover {
+  color: black;
+  background-color: white;
+}
 
 /*cards portfolio*/
 
@@ -201,65 +273,63 @@ h2 {
 
 /*Contato*/
 
-.contato{
-  background-color: rgba(0, 0, 0, 0.587);
-  width: 90%;
-  margin-bottom: 30px;
+.contato {
+  background-color: black;
   padding: 25px;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.contatos{
+.contatos {
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.ctt{
-  background-color: var(--second-color);
+.ctt {
   width: 40%;
   padding: 15px;
-  
+  height: 100px;
+
 }
 
-.ctt .social-media{
+.ctt .social-media {
   margin-top: 10px;
   padding: 10px;
 }
 
-.form-contato form{
+.form-contato form {
   justify-content: space-evenly;
 }
 
-.ct-contato{
+.form-contato {
   margin-top: 30px;
+  padding: 20px 30px;
 }
 
-.form-contato{
-    background-color: var(--second-color);
-    width: 90%;
-    padding: 20px 30px;
-}
-
-.form-inputs{
+.form-inputs {
   width: 40%;
-  justify-content: space-around;
 }
+
 /*Footer*/
 
-footer{
+footer {
   padding-top: 20px;
   background-color: #000000;
   height: 150px;
   justify-content: center;
 }
 
-.social-media{
+.social-media {
   border-top: white solid 2px;
   padding: 25px;
 }
 
-.social-media a{
+.social-media a {
   margin-right: 20px;
   font-size: 20px;
+}
+
+.social-media a:hover {
+  border-bottom: 1px white solid;
 }

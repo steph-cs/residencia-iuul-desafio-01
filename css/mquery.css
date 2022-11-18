@@ -1,0 +1,71 @@
+/* small devices*/
+@media only screen and (max-width: 870px) {
+  /*nav*/
+  .nav{
+    justify-content: center;
+  }
+  .pages{
+    display: none;
+  }
+
+  #title{
+    text-align: center;
+  }
+
+  /*perfil*/
+
+  .perfil{
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .perfil * {
+    color: black;
+  }
+
+  .img-perfil{
+    width: 100%;
+  }
+
+
+  .content-perfil{
+    width: 100%;
+    align-items: center;
+  }
+
+  .texto-perfil p:first-child{
+    margin-top: 20px;
+  }
+
+  /*hey perfil*/
+  .hey-perfil {
+    position: relative;
+    top: 0;
+    right: 40%;
+    rotate: -20deg;
+
+  }
+
+  /*contato*/
+ .ctt{
+  width: 100%;
+ }
+
+ #form-contato{
+  flex-direction: column;
+ }
+
+ .form-inputs{
+  width: 100%;
+ }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 870px) {
+  
+}
+
+/* Large devices */
+@media only screen and (min-width: 1000px) {
+  
+}
