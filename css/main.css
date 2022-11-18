@@ -110,6 +110,25 @@ header {
   width: 50%;
 }
 
+.dropbtn{
+  display: none;
+  background-color: transparent;
+}
+
+.dropbtn:hover , .dropbtn:hover i{
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.dropdown{
+  width: 50%;
+  height: 100%;
+}
+
+.dropdown-content{
+  height: 100%;
+}
+
 ul {
   width: 50%;
   height: 100%;
@@ -182,8 +201,8 @@ ul .active a {
 /*hey perfil*/
 .hey-perfil {
   width: fit-content;
-  position: absolute;
-  top: 10%;
+  position: relative;
+  top: 15%;
   right: 40%;
   rotate: -20deg;
 
@@ -235,6 +254,7 @@ ul .active a {
 
 #portfolio {
   padding: 25px 50px;
+  background-color: white;
 
 }
 
@@ -243,6 +263,9 @@ h2 {
   margin-bottom: 30px;
 }
 
+#portfolio h2{
+  color: black;
+}
 
 .cards-portfolio {
   flex-wrap: wrap;
@@ -255,6 +278,7 @@ h2 {
   width: 400px;
   height: 500px;
   margin: 0 20px 30px 0;
+  box-shadow: 0px 0px 15px 0px black;
 }
 
 .img-card {
