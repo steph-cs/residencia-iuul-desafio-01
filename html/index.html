@@ -18,18 +18,18 @@
       <div class="dropdown">
         <button title="menu" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
         
-        <ul class="pages f-row dropdown-content w-100">
-          <li class="f-row center active"><a href="./index.html">Home</a></li>
-          <li class="f-row center"><a href="">Perfil</a></li>
-          <li class="f-row center"><a href="#portfolio">Portfólio</a></li>
-          <li class="f-row center"><a href="#contato">Contato</a></li>
+        <ul class="f-row dropdown-content w-100">
+          <li id="nav-home" class="f-row center active"><a href="./index.html">Home</a></li>
+          <li id="nav-perfil" class="f-row center"><a href="">Perfil</a></li>
+          <li id="nav-portfolio" class="f-row center"><a href="#portfolio">Portfólio</a></li>
+          <li id="nav-contato" class="f-row center"><a href="#contato">Contato</a></li>
         </ul>
         
       </div>
     </nav>
   </header>
 
-  <div class="perfil f-row" id="home-perfil">
+  <div class="perfil f-row" id="home">
     <div class="img-perfil f-row">
       <img id="img-perfil" src="../img/foto_perfil.png" alt="" height="350px">
     </div>
@@ -186,10 +186,10 @@
     <div class="nav f-row">
       <div id="title">STEPHANIE CAMPELO</div>
       <ul class="f-row">
-        <li><a href="">Home</a></li>
-        <li><a href="">Perfil</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#perfil">Perfil</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
     <ul class="social-media w-100 center f-row">
@@ -215,6 +215,7 @@
       </li>
     </ul>
   </footer>
+  <script src="../script.js"></script>
 </body>
 
 </html>
