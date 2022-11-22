@@ -11,7 +11,7 @@
 :root {
   --primary-color: #0A0E0F;
   --background-color: #1b1b1b;
-  --second-color: #323239;
+  --second-color: #121212;
   --third-color: #BDBDBD;
 }
 
@@ -93,6 +93,10 @@ body {
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
+}
+
+section{
+  padding: 70px 50px;
 }
 
 /*nav style*/
@@ -183,7 +187,6 @@ header .nav ul .active a {
 .btn-primary:hover {
   color: white;
   background-color: #000000;
-  border: white 2px solid;
 }
 
 .btn-second:hover {

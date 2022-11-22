@@ -63,7 +63,6 @@
 }
 
 .perfil {
-  padding: 70px 50px;
   border-bottom: 5px rgb(0, 0, 0) solid;
 }
 
@@ -114,7 +113,6 @@
 /*cards portfolio*/
 
 #portfolio {
-  padding: 70px 50px;
   background-color: rgb(255, 251, 251);
 }
 
@@ -130,24 +128,56 @@
 
 .card {
   background-color: var(--second-color);
-  width: 400px;
-  height: 500px;
-  margin: 0 20px 30px 0;
-  box-shadow: 0px 0px 15px 0px rgb(140, 140, 140);
+  width: 350px;
+  min-height: 550px;
+  margin: 20px 30px;
+  box-shadow: 4px 3px 20px 3px rgb(0 0 0);
 }
 
 .img-card {
-  height: 200px;
   overflow: hidden;
 }
 
 .card-content {
   padding: 15px;
+  height: 70%;
+  justify-content: space-between;
+}
+
+.card-text{
+  padding: 15px 0;
 }
 
 .card-title {
-  font-size: large;
+  font-size: 1.5em;
+}
+
+.tecnologias ul{
+  width: 100%;
+  padding: 15px 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.tecnologias ul li{
+ background-color: rgb(255, 255, 255);
+ padding: 5px 15px;
+ margin: 5px;
+ border-radius: 15px;
+}
+
+.tecnologias ul li a{
+  width: 100%;
+  color: #000000;
   font-weight: bold;
+}
+
+.card-btn{
+  width: 100%;
+}
+
+.card-btn .btn{
+  margin: 15px;
 }
 
 /*Contato*/
