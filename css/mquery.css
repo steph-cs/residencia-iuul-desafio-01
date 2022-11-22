@@ -5,6 +5,13 @@
     background-color: white;
   }
 
+  /*banner perfil*/
+
+  .banner-perfil .content-perfil,
+  h2 {
+    font-size: 7vw;
+  }
+
   /*nav*/
   header .nav{
     justify-content: center;
@@ -52,8 +59,8 @@
   }
 
   .dropdown-content li{
-     background-color: white;
-     border-bottom: 1px black solid;
+    background-color: white;
+    border-bottom: 1px black solid;
   }
 
   .dropdown-content li a{
@@ -79,37 +86,33 @@
 
   /*perfil*/
 
-  .perfil{
-    flex-wrap: wrap;
-    background-color: rgb(0, 0, 0);
+  .perfil-container{
+    flex-direction: column;
   }
 
-  .img-perfil{
+  .perfil .content-container {
     width: 100%;
-
   }
 
-  .img-perfil::before{
-    display: none;
+  .perfil .content-perfil{
+    flex-direction: column;
   }
 
-
-  .content-perfil{
+  .perfil .content-perfil .content-col {
     width: 100%;
-    align-items: center;
+    margin: 15px 0;
   }
 
-  .texto-perfil p:first-child{
-    margin-top: 20px;
-  }
-
-  /*hey perfil*/
-  .hey-perfil {
-    position: relative;
-    top: 0;
-    right: 40%;
-    rotate: -20deg;
-
+  .perfil .img-perfil::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    clip-path: polygon(0 0, 5% 0, 100% 100%, 0% 100%);
   }
 
   /*portfolio*/
@@ -145,8 +148,37 @@
 }
 
 /* Medium devices */
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 870px) and (max-width: 1000px) {
+
+  /*banner perfil*/
+
+  .banner-perfil .content-perfil {
+    font-size: 5vw;
+  }
   
+  /*perfil*/
+
+  .perfil .content-perfil{
+    flex-direction: column;
+  }
+
+  .perfil .content-perfil .content-col {
+    width: 100%;
+    margin: 15px;
+   
+  }
+
+  .perfil .img-perfil::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 40%;
+    height: 105vw;
+    background-color: black;
+    clip-path: polygon(0 0, 5% 0, 100% 100%, 0% 100%);
+  }
 }
 
 /* Large devices */

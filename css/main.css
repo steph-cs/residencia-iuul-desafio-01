@@ -85,7 +85,13 @@ label {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: rgb(255, 255, 255);
+  font-size: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 /*nav style*/
@@ -106,7 +112,7 @@ header {
 
 #title {
   font-family: "Montagna";
-  font-size: large;
+  font-size: 1.5em;
   width: 50%;
 }
 
@@ -153,76 +159,6 @@ ul .active a {
   border-bottom: #000000 2px solid;
 }
 
-/*banner perfil*/
-.perfil {
-  padding: 50px;
-  align-items: center;
-
-}
-
-.img-perfil::before {
-  content: '';
-  z-index: -5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 500px;
-  background-color: black;
-  clip-path: polygon(0 0, 25% 0, 100% 100%, 0% 100%);
-}
-
-.img-perfil {
-  width: 70%;
-  justify-content: center;
-}
-
-#img-perfil {
-  border-radius: 50%;
-}
-
-.content-perfil {
-  height: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  font-weight: bolder;
-  font-size: xx-large;
-}
-
-.texto-perfil {
-  height: 60%;
-  justify-content: flex-end;
-}
-
-.btn-perfil {
-  height: 40%;
-}
-
-/*hey perfil*/
-.hey-perfil {
-  width: fit-content;
-  position: relative;
-  top: 15%;
-  right: 40%;
-  rotate: -20deg;
-
-}
-
-.hey-perfil p {
-  display: inline;
-}
-
-.hey-perfil p:last-child {
-  animation: hey 800ms alternate infinite;
-}
-
-@keyframes hey {
-  to {
-    opacity: 0;
-  }
-}
-
-
 /*btn*/
 
 .btn {
@@ -230,13 +166,18 @@ ul .active a {
   padding: 10px 25px;
   font-size: large;
   font-weight: bolder;
-  color: black;
+ 
 }
 
 .btn-second {
   background-color: transparent;
   color: white;
   border: 2px white solid;
+}
+
+.btn-primary{
+  color: black;
+  border: 2px rgb(0, 0, 0) solid;
 }
 
 .btn-primary:hover {
@@ -248,91 +189,6 @@ ul .active a {
 .btn-second:hover {
   color: black;
   background-color: white;
-}
-
-/*cards portfolio*/
-
-#portfolio {
-  padding: 25px 50px;
-  background-color: white;
-
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-#portfolio h2{
-  color: black;
-}
-
-.cards-portfolio {
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-}
-
-.card {
-  background-color: var(--second-color);
-  width: 400px;
-  height: 500px;
-  margin: 0 20px 30px 0;
-  box-shadow: 0px 0px 15px 0px black;
-}
-
-.img-card {
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card-title {
-  font-size: large;
-  font-weight: bold;
-}
-
-/*Contato*/
-
-.contato {
-  background-color: black;
-  padding: 25px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contatos {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.ctt {
-  width: 40%;
-  padding: 15px;
-  height: 100px;
-
-}
-
-.ctt .social-media {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.form-contato form {
-  justify-content: space-evenly;
-}
-
-.form-contato {
-  margin-top: 30px;
-  padding: 20px 30px;
-}
-
-.form-inputs {
-  width: 40%;
 }
 
 /*Footer*/

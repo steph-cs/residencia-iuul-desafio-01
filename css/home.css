@@ -1,0 +1,194 @@
+/*banner perfil*/
+.banner-perfil {
+  padding: 100px 40px;
+  background-color: rgb(0, 0, 0);
+}
+
+.banner-perfil .content-perfil {
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.banner-perfil .btn-perfil {
+  height: 40%;
+  margin-top: 50px;
+}
+
+/*hey perfil*/
+.banner-perfil .hey-perfil {
+  margin-bottom: 50px;
+  rotate: -20deg;
+
+}
+
+.banner-perfil .hey-perfil p {
+  display: inline;
+}
+
+.banner-perfil .hey-perfil p:last-child {
+  animation: hey 800ms alternate infinite;
+}
+
+@keyframes hey {
+  to {
+    opacity: 0;
+  }
+}
+
+/*perfil*/
+
+.perfil * {
+  color: black;
+}
+
+.perfil p a{
+  font-weight: bold;
+}
+
+.perfil q,
+.perfil p a:hover
+{
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px black solid;
+}
+
+
+#perfil h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: black 0 0 2px, black 2px 1px 7px, black 0 0 6px;
+  z-index: 1;
+}
+
+.perfil {
+  padding: 70px 50px;
+  border-bottom: 5px rgb(0, 0, 0) solid;
+}
+
+.perfil #img-perfil {
+  border-radius: 50%;
+}
+.perfil .img-perfil::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 520px;
+  left: 0;
+  width: 45%;
+  height: 75vw;
+  background-color: black;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+}
+
+.perfil .content-container {
+  width: 80%;
+  z-index: 1;
+}
+
+.perfil .content-perfil {
+  margin: 30px 0;
+}
+
+.perfil .content-perfil .content-col {
+  width: 50%;
+  margin: 0 15px;
+  padding: 15px;
+  background-color: #ebebeb;
+  box-shadow: #000000 6px 19px 20px 0px;
+}
+
+.perfil .content-perfil h3 {
+  margin: 10px 0;
+}
+
+.perfil .content-perfil .content-col div {
+  margin-bottom: 35px;
+}
+
+.cv {
+  margin-top: 50px;
+}
+
+/*cards portfolio*/
+
+#portfolio {
+  padding: 70px 50px;
+  background-color: rgb(255, 251, 251);
+}
+
+#portfolio h2 {
+  color: rgb(0, 0, 0);
+}
+
+.cards-portfolio {
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.card {
+  background-color: var(--second-color);
+  width: 400px;
+  height: 500px;
+  margin: 0 20px 30px 0;
+  box-shadow: 0px 0px 15px 0px rgb(140, 140, 140);
+}
+
+.img-card {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+/*Contato*/
+.contato *{
+  color: rgb(255, 255, 255);
+}
+
+.contato {
+  background-color: rgb(0, 0, 0);
+  padding: 70px 25px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contatos {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ctt {
+  width: 40%;
+  padding: 15px;
+  height: 100px;
+
+}
+
+.ctt .social-media {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.form-contato form {
+  justify-content: space-evenly;
+}
+
+.form-contato {
+  margin-top: 30px;
+  padding: 20px 30px;
+}
+
+.form-inputs {
+  width: 40%;
+}

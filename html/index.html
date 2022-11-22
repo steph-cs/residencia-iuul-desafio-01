@@ -8,7 +8,10 @@
   <title>Home</title>
   <script src="https://kit.fontawesome.com/19aa335e4a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/mquery.css">
+
+  <link rel="stylesheet" href="../css/perfil.css">
 </head>
 
 <body>
@@ -17,23 +20,19 @@
       <div id="title">STEPHANIE CAMPELO</div>
       <div class="dropdown">
         <button title="menu" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-        
+
         <ul class="f-row dropdown-content w-100">
-          <li id="nav-home" class="f-row center active"><a href="./index.html">Home</a></li>
-          <li id="nav-perfil" class="f-row center"><a href="">Perfil</a></li>
+          <li id="nav-home" class="f-row center active"><a href="#home">Home</a></li>
+          <li id="nav-perfil" class="f-row center"><a href="#perfil">Perfil</a></li>
           <li id="nav-portfolio" class="f-row center"><a href="#portfolio">Portfólio</a></li>
           <li id="nav-contato" class="f-row center"><a href="#contato">Contato</a></li>
         </ul>
-        
+
       </div>
     </nav>
   </header>
 
-  <div class="perfil f-row" id="home">
-    <div class="img-perfil f-row">
-      <img id="img-perfil" src="../img/foto_perfil.png" alt="" height="350px">
-    </div>
-
+  <div class="banner-perfil f-row center" id="home">
     <div class="content-perfil f-col">
       <div class="hey-perfil">
         <p>Hey!</p>
@@ -51,9 +50,66 @@
         </p>
       </div>
       <div class="btn-perfil">
-        <button class="btn btn-second">Saiba mais...</button>
+        <a href="#perfil" class="btn btn-second">Saiba mais...</a>
       </div>
     </div>
+  </div>
+
+  <div id="perfil" class="perfil  f-col">
+    <h2>PERFIL ______</h2>
+    <div class="perfil-container center f-row">
+      <div class="img-perfil">
+        <img id="img-perfil" src="../img/foto_perfil.png" height="350px" alt="">
+      </div>
+
+      <div class="content-container center f-col">
+
+        <div class="content-perfil f-row">
+          <div class="content-col">
+            <div id="sobre-mim">
+              <h3>____Sobre mim</h3>
+              <p>
+                Meu nome é <b>Stephanie Campelo</b> , tenho 21 anos, atualmente residindo em Florianópois - SC.
+              </p>
+              <p>
+                Tive o primeiro contato com programação em 2019 pouco tempo antes de iniciar o curso de Sistemas de
+                Informação na UFSC.
+              </p>
+              <p>
+                Me interessei pela área de programação por gostar de desafios, resolver problemas lógicos, desenvolver
+                pensamento análitico.
+              </p>
+            </div>
+          </div>
+          <div class="content-col">
+            <div id="formacao-acad">
+              <h3>____Formação Acadêmica</h3>
+              <p>
+                Graduanda Sistemas de Informação
+              </p>
+              <p>
+                <a href="http://ufsc.br" target="_blank">
+                  Universidade Federal de Santa Catarina - UFSC
+                </a>
+              </p>
+            </div>
+            <div id="atuacao-prof">
+              <h3>____Atuação Profissional</h3>
+              <p>
+                Atualmente estudando e me desenvolvendo na área de <b>Front End</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="quote f-row center">
+          <q>Impulsionada a desafios e a encontrar a melhor resolução para eles.</q>
+        </div>
+        <div class="cv">
+          <a class="btn btn-primary" href="../img/stephanieCs_CV.pdf" download="stephanieCs_CV" type="application/pdf">Download CV</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div id="portfolio" class="w-100">
@@ -215,7 +271,7 @@
       </li>
     </ul>
   </footer>
-  <script src="../script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
