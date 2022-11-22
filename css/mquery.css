@@ -15,72 +15,60 @@
   /*nav*/
   header .nav{
     justify-content: center;
-    background-color: white;
     padding: 0;
-    height: 50px;
-    border-bottom: rgb(0, 0, 0) 2px solid;
   }
 
-  header #title{
-    color: black;
-  }
-
-  #title{
+  header .nav #title{
     text-align: center;
   }
 
-  .dropdown{
+  header .nav .dropdown{
     position: absolute;
     display: inline-block;
     width: 100%;
   }
-  .dropbtn{
+  header .nav .dropbtn{
     display: block;
     float: right;
     width: 50px;
     height: 100%;
-    border-bottom: rgb(0, 0, 0) 1px solid;
   }
 
-  .dropbtn i{
+  header .nav .dropbtn i{
     display: block;
     color: black;
     font-size: 24px;
   }
 
-  .dropdown-content{
-    display: none;
-    
+  header .nav .dropdown-content{
+    display: none; 
   }
 
-  .dropdown-content ul{
+  header .nav .dropdown-content ul{
     flex-direction: column;
-    
   }
 
-  .dropdown-content li{
+  header .nav .dropdown-content li{
     background-color: white;
     border-bottom: 1px black solid;
   }
 
-  .dropdown-content li a{
-    color: rgb(0, 0, 0);
-  }
-
-  header nav li:hover a {
-    border-bottom: rgb(0, 0, 0) 2px solid;
-  }
-  
-  ul .active,
-  ul .active a {
+  header .nav ul .active,
+  header .nav ul .active a {
     box-sizing: content-box;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-bottom: #ffffff 2px solid;
   }
 
-  .dropbtn:hover ~ .dropdown-content,
-  .dropdown-content:hover{
+  header .nav .dropbtn:hover ,
+  header .nav .dropbtn:hover i{
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
+
+  header .nav .dropbtn:hover ~ .dropdown-content,
+  header .nav .dropdown-content:hover{
     display: block;
   }
 

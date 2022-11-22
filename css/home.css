@@ -1,7 +1,7 @@
 /*banner perfil*/
 .banner-perfil {
   padding: 100px 40px;
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(20deg, black, black,gray);
 }
 
 .banner-perfil .content-perfil {
