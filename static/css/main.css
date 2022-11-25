@@ -240,13 +240,16 @@ footer {
 }
 
 .social-media {
-  border-top: rgb(0, 0, 0) solid 2px;
   padding: 25px;
 }
 
 .social-media a {
-  padding: 15px;
+  padding: 5px 15px;
   font-size: 20px;
+}
+
+.social-media li{
+  padding-top: 10px ;
 }
 
 .social-media a i{

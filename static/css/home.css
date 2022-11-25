@@ -51,7 +51,6 @@
 .perfil p a:hover
 {
   font-weight: bold;
-  padding-bottom: 5px;
   border-bottom: 1px black solid;
 }
 
@@ -181,13 +180,14 @@
 .ctt {
   width: 40%;
   padding: 15px;
-  height: 100px;
+  height: 120px;
 
 }
 
 .ctt .social-media {
   margin-top: 10px;
   padding: 10px;
+  border-top: rgb(255, 255, 255) solid 2px;
 }
 
 .form-contato form {
@@ -201,4 +201,5 @@
 
 .form-inputs {
   width: 40%;
+  height: 220px;
 }
