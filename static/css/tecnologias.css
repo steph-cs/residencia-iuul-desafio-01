@@ -1,4 +1,73 @@
-main{
-  background: linear-gradient();
-  height: 800px;
+.tecnologia{
+  background-color: black;
+  padding: 30px 25px;
+}
+
+.tecnologia h1{
+  border-bottom: 1px white solid;
+}
+
+.tecnologia h3{
+  color: white;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.tecnologia ul{
+  width: 100%;
+}
+
+.tecnologia-descricao .cols ul li{
+  list-style: inside;
+}
+
+.logo{
+  background-color: rgb(255, 255, 255);
+  border-radius: 0;
+  padding: 30px;
+  width: 30%;
+  height: auto;
+}
+
+.tecnologia-content{
+  justify-content: space-between;
+}
+
+.tecnologia-descricao{
+  width:65%;
+}
+
+.sobre,
+.cols{
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.links a{
+  margin: 15px;
+}
+
+.col{
+  padding: 20px 25px;
+  width: 45%;
+  background-color: var(--third-color);
+}
+
+.sobre.col,
+.empresas.col{
+  width: 100%;
+}
+
+.empresas ul{
+  flex-wrap: wrap;
+}
+
+.empresas ul li{
+  padding: 10px;
+}
+
+.empresas img{
+  width: 80px;
+  background-color: white;
 }

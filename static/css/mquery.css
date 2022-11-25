@@ -140,7 +140,7 @@
  .project .carousel-main .img-h{
   width: 100%;
   height: auto;
-}
+  }
 
  .project .carousel-project-main {
   height: 80vw;
@@ -149,7 +149,32 @@
  .project .carousel__actions button {
   width: 30px;
   height: 30px;
-}
+  }
+
+  /*tecnologias*/
+
+
+  .tecnologia-content,
+  .tecnologia .tecnologia-descricao .cols{
+    flex-direction: column;
+  }
+
+  .tecnologia .tecnologia-descricao .cols{
+    margin: 0;
+  }
+
+  .tecnologia .logo,
+  .tecnologia .tecnologia-descricao,
+  .tecnologia .tecnologia-descricao .cols .col {
+    width: 100%;
+  }
+
+  .tecnologia .logo,
+  .tecnologia .tecnologia-descricao .cols .col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
 }
 
 /* Medium devices */
@@ -190,9 +215,17 @@
   .card{
     width: 40%;
   }
-}
 
-/* Large devices */
-@media only screen and (min-width: 1000px) {
-  
+  /*tecnologias*/
+
+  .tecnologia-content{
+    flex-direction: column;
+  }
+
+  .tecnologia .logo,
+  .tecnologia .tecnologia-descricao{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
 }
