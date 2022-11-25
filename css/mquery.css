@@ -7,8 +7,7 @@
 
   /*banner perfil*/
 
-  .banner-perfil .content-perfil,
-  h2 {
+  .banner-perfil .content-perfil{
     font-size: 7vw;
   }
 
@@ -18,7 +17,7 @@
     padding: 0;
   }
 
-  header .nav #title{
+  .nav #title{
     padding: 0;
     text-align: center;
   }
@@ -134,7 +133,23 @@
 
  footer .nav ul{
   margin: 20px 0;
+  width: 100%;
  }
+
+ /*carousel portfolio*/
+ .project .carousel-main .img-h{
+  width: 100%;
+  height: auto;
+}
+
+ .project .carousel-project-main {
+  height: 80vw;
+ }
+
+ .project .carousel__actions button {
+  width: 30px;
+  height: 30px;
+}
 }
 
 /* Medium devices */

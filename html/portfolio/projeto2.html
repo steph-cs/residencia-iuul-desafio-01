@@ -1,72 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="https://kit.fontawesome.com/19aa335e4a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
-    <link rel="stylesheet" href="/css/mquery.css">
-  </head>
-  
-  <body>
-    <header>
-      <nav class="nav w-100 f-row">
-        <div id="title">STEPHANIE CAMPELO</div>
-        <div class="dropdown">
-          <button title="menu" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-  
-          <ul class="f-row dropdown-content w-100">
-            <li id="nav-home" class="f-row center"><a href="../index.html#home">Home</a></li>
-            <li id="nav-perfil" class="f-row center"><a href="../index.html#perfil">Perfil</a></li>
-            <li id="nav-portfolio" class="f-row center active"><a href="../index.html#portfolio">Portfólio</a></li>
-            <li id="nav-contato" class="f-row center"><a href="../index.html#contato">Contato</a></li>
-          </ul>
-  
-        </div>
-      </nav>
-    </header>
-    
-    <main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LokaCar</title>
+  <script src="https://kit.fontawesome.com/19aa335e4a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+  <link rel="stylesheet" href="/css/mquery.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav w-100 f-row">
+      <div id="title">STEPHANIE CAMPELO</div>
+      <div class="dropdown">
+        <button title="menu" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+
+        <ul class="f-row dropdown-content w-100">
+          <li id="nav-home" class="f-row center"><a href="../index.html#home">Home</a></li>
+          <li id="nav-perfil" class="f-row center"><a href="../index.html#perfil">Perfil</a></li>
+          <li id="nav-portfolio" class="f-row center active"><a href="../index.html#portfolio">Portfólio</a></li>
+          <li id="nav-contato" class="f-row center"><a href="../index.html#contato">Contato</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="f-col project center">
+    <h1 class="f-row center w-100">LokaCar</h1>
+    <div class="carousel-project-main f-row">
+      <div class="carousel__actions">
+        <button id="carousel-main__button--prev" aria-label="Previous slide"><i
+            class="fas fa-chevron-left"></i></button>
+      </div>
+      <div class="carousel-main carousel__item--visible">
+        <img class="img-h" src="/img/portfolio/lokacar.png" alt="">
+      </div>
+      <div class="carousel-main carousel__item--hidden">
+        <img class="img-v" src="/img/portfolio/lokacar_tela-cadastro.png" alt="">
+      </div>
+      <div class="carousel-main carousel__item--hidden">
+        <img class="img-v" src="/img/portfolio/lokacar_tela_login.png" alt="">
+      </div>
+      <div class="carousel-main carousel__item--hidden">
+        <img class="img-h" src="/img/portfolio/lokacar_page_not_found.jpeg" alt="">
+      </div>
+      <div class="carousel-main carousel__item--hidden">
+        <iframe width="90%" height="100%" src="https://www.youtube.com/embed/aq2BMNb_9R8" title="lokacar video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel__actions">
+        <button id="carousel-main__button--next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="f-col center project-content">
+      <h2>Descrição:</h2>
+      <div>
+        <p>
+          LokaCar é um sistema web de locação de veículos.
+        </p>
+        <p>
+          Desenvolvido para a disciplina de Programação para Web, onde foi desenvolvido conhecimento e habilidades para construção de Front e Back end.
+        </p>
+        <p>
+          O sistema permite aos usuários publicarem seu veículo (carro, moto, van) para locação e também buscar por um de acordo com sua localização para realizar a locação.
+        </p>
+        <p>
+          Para alugar ou publicar um veículo é necessário realizar cadastro/login.
+        </p>
+        <p>
+          É possível vizualizar e editar as informações do perfil do usuário, assim como seus anúncios publicados e reservas de veículo realizadas.
+        </p>
+      </div>
       
-    </main>
-
-
-
-    <footer class="f-col">
-      <div class="nav f-row">
-        <div id="title">STEPHANIE CAMPELO</div>
+      <div class="tecnologias">
         <ul class="f-row">
-          <li><a href="../index.html#home">Home</a></li>
-          <li><a href="../index.html#perfil">Perfil</a></li>
-          <li><a href="../index.html#portfolio">Portfólio</a></li>
-          <li><a href="../index.html#contato">Contato</a></li>
+          <li>
+            <a href="./tecnologias/html5.html">HTML 5</a>
+          </li>
+          <li>
+            <a href="./tecnologias/css3.html">CSS 3</a>
+          </li>
+          <li>
+            <a href="./tecnologias/bootstrap.html">Bootstrap</a>
+          </li>
+          <li>
+            <a href="./tecnologias/javascript.html">JavaScript</a>
+          </li>
+          <li>
+            <a href="./tecnologias/java.html">Java</a>
+          </li>
+          <li>
+            <a href="./tecnologias/springboot.html">SpringBoot</a>
+          </li>
+          <li>
+            <a href="./tecnologias/html5.html">PostgreSQL</a>
+          </li>
         </ul>
       </div>
-      <ul class="social-media w-100 center f-row">
-        <li>
-          <a target="_blank" href="https://github.com/steph-cs">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/in/stephanie-campelo/">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.instagram.com/ste_campelo/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://twitter.com/steph_campelo">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
+      <div class="f-row center">
+        <a class="btn btn-second" href="https://github.com/steph-cs/lokaCar-sistema-web" target="_blank" rel="noopener noreferrer">Ir para projeto</a>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer class="f-col">
+    <div class="nav f-row">
+      <div id="title">STEPHANIE CAMPELO</div>
+      <ul class="f-row">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#perfil">Perfil</a></li>
+        <li><a href="../index.html#portfolio">Portfólio</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
       </ul>
-    </footer>
-  </body>
+    </div>
+    <ul class="social-media w-100 center f-row">
+      <li>
+        <a target="_blank" href="https://github.com/steph-cs">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/stephanie-campelo/">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/ste_campelo/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://twitter.com/steph_campelo">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <!--script -->
+  <script src="/js/carousel.js"></script>
+</body>
+
 </html>
