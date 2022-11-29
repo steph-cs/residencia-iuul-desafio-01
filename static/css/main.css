@@ -186,6 +186,7 @@ header .nav ul .active a {
  padding: 5px 15px;
  margin: 5px;
  border-radius: 15px;
+ border: white 2px solid;
 }
 
 .tecnologias ul li a{
@@ -194,6 +195,21 @@ header .nav ul .active a {
   font-weight: bold;
 }
 
+.tecnologias ul li a,
+.tecnologias ul li,
+.btn{
+  transition: color 300ms ease-in-out, background-color  300ms ease-in-out ;
+}
+
+.tecnologias ul li:hover{
+  background-color: #000000;
+  
+}
+
+.tecnologias ul li:hover a{
+  color: white;
+  
+}
 /*btn*/
 
 .btn {
@@ -252,6 +268,7 @@ footer {
 
 .social-media a i{
   font-size: 25px;
+  transition: transform 1s ease-in-out;
 }
 
 .contato .social-media a:hover {
@@ -260,4 +277,8 @@ footer {
 
 footer .social-media a:hover {
   border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.social-media li:hover i{
+  transform: rotate(360deg);
 }

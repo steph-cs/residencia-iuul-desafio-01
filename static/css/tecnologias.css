@@ -65,6 +65,11 @@
 
 .empresas ul li{
   padding: 10px;
+  border-bottom: 1px transparent solid;
+}
+
+.empresas ul li:hover{
+  border-bottom-color: white;
 }
 
 .empresas img{
