@@ -145,9 +145,8 @@ header .nav .dropdown-content{
   height: 100%;
 }
 
-ul {
+footer .nav ul {
   width: 50%;
-  font-weight: 300;
   justify-content: space-around;
 }
 
@@ -281,4 +280,24 @@ footer .social-media a:hover {
 
 .social-media li:hover i{
   transform: rotate(360deg);
+}
+
+/*breadcrumb*/
+
+ul.breadcrumb {
+  padding: 10px 15px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a:hover {
+  color: #7a7a7a;
+  text-decoration: underline;
+}
+
+ul.breadcrumb .active{
+  text-decoration: underline;
 }
