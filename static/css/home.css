@@ -225,3 +225,22 @@ section:target{
   width: 40%;
   height: 220px;
 }
+
+
+/* Erro form */
+.invalid {
+  border-color: #900;
+}
+
+.valid{
+  border-color: rgb(0, 203, 68);
+}
+
+.error {
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+  padding: 0.3em;
+}
