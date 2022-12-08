@@ -223,7 +223,7 @@ section:target{
 
 .form-inputs {
   width: 40%;
-  height: 220px;
+  height: 300px;
 }
 
 
@@ -243,4 +243,5 @@ section:target{
 
 .error.active {
   padding: 0.3em;
+  margin-bottom: 5px;
 }

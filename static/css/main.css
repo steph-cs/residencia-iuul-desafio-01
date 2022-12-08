@@ -28,7 +28,7 @@
 
 input,
 textarea {
-  padding: 0 15px;
+  padding: 10px 15px;
   letter-spacing: 1px;
   color: white;
   font-size: 14px;
@@ -53,6 +53,7 @@ textarea:focus {
 textarea {
   border: white 1px solid;
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 input {

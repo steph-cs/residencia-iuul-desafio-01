@@ -119,8 +119,13 @@
   flex-direction: column;
  }
 
+ #form-contato .form-inputs:first-child{
+  margin-bottom: 50px;
+ }
+
  .form-inputs{
   width: 100%;
+  height: auto;
  }
 
  /*footer*/
