@@ -32,46 +32,10 @@ function destacaMenu(el){
 }
 
 
-//msg erro formulario
+//valida formulario
+//armazena mensagens
+
 
 const submit = document.getElementById("btn-submit")
 const form = document.getElementById("form-contato").elements
 
-
-for(let i = 0; i < 4; i++){
-  let el = form[i]
-  let error = document.querySelector("#"+el.id + "+ span.error")
-  el.addEventListener("input", (event) => {
-    if (el.validity.valid) {
-      el.classList.remove("invalid")
-      el.classList.add("valid")
-      error.textContent = ""
-      error.className = "error" 
-    } else {
-      el.classList.remove("valid")
-      el.classList.add("invalid")
-      showError(el.name ,error)
-    }
-  });
-}
-
-
-
-
-submit.addEventListener("click", (event) => {
-  for(let i = 0; i < 4; i++){
-    el = form[i]
-    error = document.querySelector("#"+el.id + "+ span.error")
-   
-    if (!el.validity.valid) {
-      showError(el.name ,error)
-      event.preventDefault()
-    }
-  }
-  
-});
-
-function showError(name, error) {
-  error.textContent = `Por favor, insira um ${name} válido.`
-  error.className = "error active"
-}
