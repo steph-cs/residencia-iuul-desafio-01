@@ -223,5 +223,25 @@ section:target{
 
 .form-inputs {
   width: 40%;
-  height: 220px;
+  height: 300px;
+}
+
+
+/* Erro form */
+.invalid {
+  border-color: #900;
+}
+
+.valid{
+  border-color: rgb(0, 203, 68);
+}
+
+.error {
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+  padding: 0.3em;
+  margin-bottom: 5px;
 }

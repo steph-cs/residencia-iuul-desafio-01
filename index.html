@@ -309,25 +309,29 @@
 
     <div class="form-contato w-100 center f-col">
       <div class="w-100">
-        <form id="form-contato" action="" method="post" class="f-row">
+        <form id="form-contato" name="form-contato"  action="" method="post" class="f-row">
           <div class="f-col form-inputs">
             <label for="nome">Nome:</label>
-            <input required type="text" id="nome">
+            <input required type="text" id="nome" name="nome" placeholder="Maria" minlength="3" maxlength="30">
+            <span class="error" aria-live="polite"></span>
 
             <label for="telefone">Telefone:</label>
-            <input required type="tel" id="telefone">
+            <input required type="tel" id="tel" name="telefone" pattern="\([0-9]{2}\)[\s][9]{1}[\s][0-9]{4}-[0-9]{4}" placeholder="(99) 9 9999-9999">
+            <span class="error" aria-live="polite"></span>
 
             <label for="email">Email:</label>
-            <input required type="email" id="email">
+            <input required type="email" id="email" name="email" minlength="5" maxlength="50" placeholder="maria@gmail.com">
+            <span class="error" aria-live="polite"></span>
           </div>
           <div class="f-col form-inputs">
             <label for="msg">Mensagem:</label>
-            <textarea required form="contato" maxlength="240" name="msg" id="msg" cols="50" rows="10"></textarea>
+            <textarea required form="form-contato" minlength="1" maxlength="240" name="mensagem" id="msg" cols="50" rows="10" placeholder="Olá..."></textarea>
+            <span class="error" aria-live="polite"></span>
           </div>
         </form>
       </div>
       <div>
-        <button class="btn btn-second" type="submit" form="form-contato">Enviar</button>
+        <button id="btn-submit" class="btn btn-second" type="submit" form="form-contato">Enviar</button>
       </div>
     </div>
   </section>
