@@ -31,11 +31,3 @@ function destacaMenu(el){
   nav.classList.add("active")
 }
 
-
-//valida formulario
-//armazena mensagens
-
-
-const submit = document.getElementById("btn-submit")
-const form = document.getElementById("form-contato").elements
-

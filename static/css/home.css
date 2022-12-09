@@ -54,7 +54,8 @@ section:target{
 
 /*perfil*/
 
-.perfil * {
+.perfil .content-perfil *,
+.perfil .quote * {
   color: black;
 }
 
@@ -182,7 +183,8 @@ section:target{
 }
 
 /*Contato*/
-.contato *{
+.contato .contatos *,
+.contato #form-contato *{
   color: rgb(255, 255, 255);
 }
 
@@ -224,6 +226,14 @@ section:target{
 .form-inputs {
   width: 40%;
   height: 300px;
+}
+
+.btns-mensagens{
+  margin-top: 30px;
+}
+
+.btns-mensagens .btn{
+  margin: 10px 10px;
 }
 
 

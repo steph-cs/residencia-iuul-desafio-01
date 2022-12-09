@@ -6,8 +6,8 @@ if(document.title == "Home"){
   
   //add nome pag e link local storage
   //link da secao ativa
-  breadcrumb["link"] = "/index.html#portfolio"
-  breadcrumb["page"] = "Portfólio"
+  breadcrumb["link"] = "/index.html"
+  breadcrumb["page"] = "Home"
   addBreadcrumb(breadcrumb)
 
 }else{

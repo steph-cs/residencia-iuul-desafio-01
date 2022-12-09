@@ -1,0 +1,31 @@
+main{
+  background-color: black;
+  min-height: 500px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.mensagens{
+  width: 60%;
+}
+.mensagem{
+  background-color: var(--third-color);
+  padding: 25px;
+  border-radius: 10px 0 10px 0;
+  margin-bottom: 15px;
+}
+
+.contato p{
+  display: inline;
+  margin: 0 5px;
+}
+
+.contato{
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.contato-mensagem{
+  align-items: center;
+}

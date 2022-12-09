@@ -40,6 +40,10 @@ input {
   height: 30px;
 }
 
+btn{
+  cursor: pointer;
+}
+
 input:hover,
 textarea:hover {
   border-width: 2px;
@@ -217,6 +221,7 @@ header .nav ul .active a {
   padding: 10px 25px;
   font-size: large;
   font-weight: bolder;
+  text-align: center;
  
 }
 
@@ -227,19 +232,32 @@ header .nav ul .active a {
 }
 
 .btn-primary{
-  color: black;
+  color: white;
+  background-color: #000000;
   border: 2px rgb(0, 0, 0) solid;
 }
 
+.btn-third{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 2px rgb(255, 255, 255) solid;
+}
+
 .btn-primary:hover {
-  color: white;
-  background-color: #000000;
+  color: black;
+  background-color: transparent;
 }
 
 .btn-second:hover {
   color: black;
   background-color: white;
 }
+
+.btn-third:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
 
 /*Footer*/
 
@@ -301,4 +319,37 @@ ul.breadcrumb li a:hover {
 
 ul.breadcrumb .active{
   text-decoration: underline;
+}
+
+/*toast*/
+
+#toast {
+  visibility: hidden;
+  background-color: var(--second-color);
+  border: rgb(0, 203, 68) 3px solid;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 10px 0 10px ;
+  padding: 15px;
+
+  position: fixed;
+  z-index: 10;
+  right: 5px;
+  top: 70px;
+  font-size: 1em;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {right: -100px;opacity: 0;}
+  to {right: 5px;opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {right: 5px;opacity: 1;}
+  to {right: -100px;opacity: 0;}
 }
