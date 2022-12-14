@@ -101,17 +101,25 @@ function addMensagemHtml(){
       mensagensHtml.innerHTML += `
         <div class="mensagem">
           <div class="f-row contato">
-            <p>Nome: ${mensagens[i]["nome"]}</p>
-            <p>Telefone: ${mensagens[i]["telefone"]}</p>
-            <p>Email: ${mensagens[i]["email"]}</p>
+            <div>
+              <h4>Nome:</h4>
+              <p>${mensagens[i]["nome"]}</p>
+            </div>
+            <div>
+              <h4>Telefone:</h4>
+              <p><a href='tel:+${mensagens[i]["telefone"]}'>${mensagens[i]["telefone"]}</a></p>
+            </div>
+            <div>
+              <h4>Email:</h4>
+              <p><a href='mailto:${mensagens[i]["email"]}'>${mensagens[i]["email"]}</a></p>
+            </div>
           </div>
           <div class="f-col contato-mensagem">
-            <p>Mensagem:</p>
+            <h3>Mensagem:</h3>
             <p>${mensagens[i]["mensagem"]}</p>
           </div>
-        </div>
-      `
-      
+      </div>
+      `  
     }
   }else{
     mensagensHtml.innerHTML += `
@@ -121,9 +129,6 @@ function addMensagemHtml(){
         </div>
       `
   }
-    
-
-  
 }
 
 function toast(mensagem) {

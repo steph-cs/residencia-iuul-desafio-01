@@ -5,6 +5,19 @@ main{
   padding: 15px 0;
 }
 
+h3{
+  color: white;
+  border-color: white;
+}
+
+h3, h4{
+  margin: 5px;
+}
+
+a:hover{
+  border-bottom: white 1px solid;
+}
+
 .mensagens{
   width: 60%;
 }
