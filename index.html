@@ -316,7 +316,7 @@
             <span class="error" aria-live="polite"></span>
 
             <label for="telefone">Telefone:</label>
-            <input required type="tel" id="tel" name="telefone" placeholder="(99) 9 9999-9999">
+            <input required type="tel" id="tel" name="telefone" minlength="14" maxlength="14" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" placeholder="(99) 9 9999-9999">
             <span class="error" aria-live="polite"></span>
 
             <label for="email">Email:</label>
